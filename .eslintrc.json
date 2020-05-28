@@ -6,13 +6,13 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
+    "prettier",
     "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
         "jsx": true
@@ -30,6 +30,11 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".js"] }],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-nested-ternary": "off",
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/destructuring-assignment": 0,
+    "no-underscore-dangle": 0
   }
 }
